@@ -53,7 +53,6 @@
       <artifactId>spring-cloud-starter-bootstrap</artifactId>
       <version>${cloud.version}</version>
     </dependency>
-
   </dependencies>
 
   <build>
