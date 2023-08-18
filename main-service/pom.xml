@@ -17,6 +17,7 @@
   <properties>
     <java.version>17</java.version>
     <eureka.client.version>4.0.2</eureka.client.version>
+    <cloud.version>4.0.3</cloud.version>
   </properties>
   <dependencies>
     <dependency>
@@ -42,6 +43,17 @@
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
       <version>${eureka.client.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-config-client</artifactId>
+      <version>${cloud.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bootstrap</artifactId>
+      <version>${cloud.version}</version>
+    </dependency>
+
   </dependencies>
 
   <build>
