@@ -6,8 +6,8 @@ spring:
   application:
     name: todo-service
   data:
-  mongodb:
-  uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}
+    mongodb:
+      uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}
 eureka:
   client:
     serviceUrl:
