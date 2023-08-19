@@ -1,8 +1,0 @@
-server:
-  port: 0
-spring:
-  application:
-    name: main-service
-    cloud:
-      config:
-        profile: ${SPRING_PROFILES_ACTIVE}
