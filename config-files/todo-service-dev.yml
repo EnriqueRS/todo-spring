@@ -1,6 +1,6 @@
 todo:
   property: ToDo Profile Dev
-  test: Test Property update
+  test: Test Property
 server:
   port: 0
 spring:
