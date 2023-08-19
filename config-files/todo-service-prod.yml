@@ -1,5 +1,6 @@
 todo:
   property: ToDo Profile Prod
+  test: Test Property
 server:
   port: 0
 spring:
@@ -9,6 +10,8 @@ spring:
     mongodb:
       uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}
 eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
       defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka/
