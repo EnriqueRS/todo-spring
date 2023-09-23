@@ -5,7 +5,7 @@
 
 ## Project Description
 
-This project is a backend developed with Spring Boot 3 that provides an API to manage ToDo tasks. The application integrates with Eureka for service management, Spring Cloud Config for centralized configuration, and RabbitMQ for asynchronous communication.
+This project is a backend developed with Spring Boot 3 that provides an API to manage ToDo tasks. The application integrates with Eureka for service management, Spring Cloud Config for centralized configuration, RabbitMQ for asynchronous communication, and MongoDB as the database.
 
 ## Key Features
 
@@ -21,6 +21,7 @@ This project is a backend developed with Spring Boot 3 that provides an API to m
 - Eureka Server for service management.
 - Spring Cloud Config for centralized configuration.
 - RabbitMQ for asynchronous communication.
+- MongoDB as the database.
 
 ## Installation
 
@@ -44,7 +45,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Descripción del Proyecto
 
-Este proyecto es un backend desarrollado con Spring Boot 3 que proporciona una API para gestionar tareas pendientes (ToDo). La aplicación se integra con Eureka para la gestión de servicios, Spring Cloud Config para la configuración centralizada y RabbitMQ para la comunicación asincrónica.
+Este proyecto es un backend desarrollado con Spring Boot 3 que proporciona una API para gestionar tareas pendientes (ToDo). La aplicación se integra con Eureka para la gestión de servicios, Spring Cloud Config para la configuración centralizada, RabbitMQ para la comunicación asincrónica y MongoDB como la base de datos.
 
 ## Características Clave
 
@@ -60,6 +61,7 @@ Este proyecto es un backend desarrollado con Spring Boot 3 que proporciona una A
 - Eureka Server para la gestión de servicios.
 - Spring Cloud Config para la configuración centralizada.
 - RabbitMQ para la comunicación asincrónica.
+- MongoDB como base de datos.
 
 ## Instalación
 
@@ -74,4 +76,3 @@ Este proyecto es un backend desarrollado con Spring Boot 3 que proporciona una A
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
-
