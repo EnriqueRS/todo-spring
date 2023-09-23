@@ -1,7 +1,7 @@
 main:
   property: Gateway Profile Prod
 server:
-  port: 0
+  port: 7070
 spring:
   application:
     name: gateway-service
