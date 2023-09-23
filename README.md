@@ -26,7 +26,7 @@ This project is a backend developed with Spring Boot 3 that provides an API to m
 ## Installation
 
 1. Clone the repository: `git clone git@github.com:EnriqueRS/todo-spring.git`
-2. Navigate to the project directory: `cd todo-backend`
+2. Navigate to the project directory: `cd todo-spring`
 3. Start the Spring Boot application.
 
 ## Usage
@@ -66,7 +66,7 @@ Este proyecto es un backend desarrollado con Spring Boot 3 que proporciona una A
 ## Instalación
 
 1. Clona el repositorio: `git clone git@github.com:EnriqueRS/todo-spring.git`
-2. Navega hasta el directorio del proyecto: `cd todo-backend`
+2. Navega hasta el directorio del proyecto: `cd todo-spring`
 3. Inicia la aplicación Spring Boot.
 
 ## Uso
