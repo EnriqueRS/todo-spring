@@ -1,4 +1,4 @@
-main:
+gateway:
   property: Gateway Profile Dev
 server:
   port: 7070
@@ -9,9 +9,9 @@ spring:
     gateway:
       routes:
         - id: main-service
-      uri: lb://main-service
-      predicates:
-        - Path=/api/v1/**
+          uri: lb://main-service
+          predicates:
+            - Path=/api/v1/**
     loadbalancer:
       ribbon:
         enabled: false
