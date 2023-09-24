@@ -5,6 +5,10 @@ server:
 spring:
   application:
     name: gateway-service
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
   data:
     mongodb:
       uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}
