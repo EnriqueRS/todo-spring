@@ -36,3 +36,6 @@ build/
 /discovery-service/.mvn/
 /todo-service/.mvn/
 /gateway-service/.mvn/
+
+### Vault ###
+/config-files/*-secrets.json
