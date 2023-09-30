@@ -8,7 +8,7 @@
 This project is a backend developed with Spring Boot 3 that provides an API to manage ToDo tasks.
 The application integrates with Eureka for service management, Spring Cloud Gateway for API gateway,
 Spring Cloud Config for centralized configuration, RabbitMQ for asynchronous communication, and
-MongoDB as the database.
+MongoDB as the database. Vault is used for secret management.
 
 ## Key Features
 
@@ -16,6 +16,7 @@ MongoDB as the database.
 - Asynchronous communication using RabbitMQ.
 - Centralized configuration with Spring Cloud Config.
 - Service registration and discovery with Eureka.
+- Secret management with Vault.
 
 ## Prerequisites
 
@@ -26,6 +27,7 @@ MongoDB as the database.
 - Spring Cloud Config for centralized configuration.
 - RabbitMQ for asynchronous communication.
 - MongoDB as the database.
+- Vault for secret management.
 
 ## Installation
 
@@ -52,7 +54,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Este proyecto es un backend desarrollado con Spring Boot 3 que proporciona una API para gestionar
 tareas pendientes (ToDo). La aplicación se integra con Eureka para la gestión de servicios, Spring
 Cloud Gateway para la puerta de enlace de la API, Spring Cloud Config para la configuración
-centralizada, RabbitMQ para la comunicación asincrónica y MongoDB como la base de datos.
+centralizada, RabbitMQ para la comunicación asincrónica, MongoDB como la base de datos y Vault para la gestión de secretos.
 
 ## Características Clave
 
@@ -60,6 +62,7 @@ centralizada, RabbitMQ para la comunicación asincrónica y MongoDB como la base
 - Comunicación asincrónica utilizando RabbitMQ.
 - Configuración centralizada con Spring Cloud Config.
 - Registro y descubrimiento de servicios con Eureka.
+- Gestión de secretos con Vault.
 
 ## Requisitos Previos
 
@@ -70,6 +73,7 @@ centralizada, RabbitMQ para la comunicación asincrónica y MongoDB como la base
 - Spring Cloud Config para la configuración centralizada.
 - RabbitMQ para la comunicación asincrónica.
 - MongoDB como la base de datos.
+- Vault para la gestión de secretos.
 
 ## Instalación
 
