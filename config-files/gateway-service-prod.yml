@@ -11,7 +11,7 @@ spring:
         - id: main-service
           uri: lb://main-service
           predicates:
-            - Path=/api/v1/**
+            - Path=/api/v1/todo/**
     loadbalancer:
       ribbon:
         enabled: false

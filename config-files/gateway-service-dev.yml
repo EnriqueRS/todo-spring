@@ -11,13 +11,10 @@ spring:
         - id: main-service
           uri: lb://main-service
           predicates:
-            - Path=/api/v1/**
+            - Path=/api/v1/todo/**
     loadbalancer:
       ribbon:
         enabled: false
-  data:
-    mongodb:
-      uri: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_DATABASE}
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
