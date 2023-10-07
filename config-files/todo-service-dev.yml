@@ -6,14 +6,6 @@ server:
 spring:
   application:
     name: todo-service
-  cloud:
-    vault:
-      application-name: todo-service
-      host: ${VAULT_HOST}
-      port: ${VAULT_PORT}
-      scheme: http
-      authentication: TOKEN
-      token: ${VAULT_TOKEN}
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
