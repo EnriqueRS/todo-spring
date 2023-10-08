@@ -19,6 +19,7 @@
     <eureka.client.version>4.0.2</eureka.client.version>
     <cloud.version>4.0.3</cloud.version>
     <vault.version>4.0.1</vault.version>
+    <bus.version>4.0.1</bus.version>
   </properties>
   <dependencies>
     <dependency>
@@ -58,6 +59,11 @@
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-vault-config</artifactId>
       <version>${vault.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+      <version>${bus.version}</version>
     </dependency>
   </dependencies>
 
