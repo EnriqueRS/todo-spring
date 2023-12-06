@@ -15,8 +15,3 @@ spring:
     config:
       uri: http://localhost:8888
       profile: ${SPRING_PROFILES_ACTIVE}
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"

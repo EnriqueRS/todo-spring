@@ -9,3 +9,9 @@ spring:
     config:
     uri: http://localhost:8888
     profile: ${SPRING_PROFILES_ACTIVE:dev}
+  gateway:
+    routes:
+      - id: main-service
+        uri: lb://main-service
+        predicates:
+          - Path=/api/v1/todo/**
