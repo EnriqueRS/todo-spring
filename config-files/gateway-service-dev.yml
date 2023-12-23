@@ -9,15 +9,12 @@ spring:
     gateway:
       routes:
         - id: main-service
-          uri: lb://main-service
+          uri: lb://todo-service
           predicates:
-            - Path=/api/v1/todo/**
+            - Path=/api/v1/todos/**
     loadbalancer:
       ribbon:
         enabled: false
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
       defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka/
