@@ -1,17 +1,14 @@
 server:
   port: 0
-
+todo:
+  test: Test Property for Bus and RabbitMQ (Local)
 spring:
   application:
     name: todo-service
-  cloud:
-    vault:
-      application-name: todo-service
-      host: ${VAULT_HOST}
-      port: ${VAULT_PORT}
-      scheme: http
-      authentication: TOKEN
-      token: ${VAULT_TOKEN}
-    config:
-      uri: http://localhost:8888
-      profile: ${SPRING_PROFILES_ACTIVE}
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  config.import: "configserver:http://localhost:8888"
+
+logging:
+  level:
+    org.springframework.web.client: TRACE
