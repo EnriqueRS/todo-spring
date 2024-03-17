@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: main-service
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
   cloud:
     vault:
       application-name: todo-service
@@ -14,4 +16,3 @@ spring:
       token: ${VAULT_TOKEN}
     config:
     uri: http://localhost:8888
-    profile: ${SPRING_PROFILES_ACTIVE}
