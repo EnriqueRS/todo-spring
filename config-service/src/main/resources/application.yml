@@ -1,12 +1,19 @@
-server:
-  port: 8888
+server.port: 8888
 spring:
-  application:
-    name: config-service
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/EnriqueRS/todo-spring
-          default-label: master
-          search-paths: config-files
+  application.name: config-service
+  profiles.active: ${SPRING_PROFILES_ACTIVE:dev, git, vault}
+  cloud.config.server:
+    vault:
+      kv-version: 2
+      host: ${VAULT_HOST}
+      port: ${VAULT_PORT}
+      authentication: TOKEN
+      token: ${VAULT_TOKEN}
+      order: 1
+    git:
+      uri: https://github.com/EnriqueRS/todo-spring
+      default-label: master
+      search-paths: config-files
+      order: 2
+logging.level:
+  org.springframework.web.client: TRACE
