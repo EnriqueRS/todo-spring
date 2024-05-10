@@ -19,6 +19,3 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
-  client:
-    serviceUrl:
-      defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka/
