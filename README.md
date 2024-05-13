@@ -37,7 +37,12 @@ MongoDB as the database. Vault is used for secret management.
 
 ## Usage
 
-- TODO API list
+- Run in this order:
+  - Spring Cloud Config Server
+  - Eureka Server
+  - Gateway
+  - ToDo Service
+  - Main Service
 
 ## License
 
@@ -83,7 +88,12 @@ centralizada, RabbitMQ para la comunicación asincrónica, MongoDB como la base 
 
 ## Uso
 
-- TODO: Lista de API
+- Ejecuta en este orden:
+  - Spring Cloud Config Server
+  - Eureka Server
+  - Gateway
+  - ToDo Service
+  - Main Service
 
 ## Licencia
 
