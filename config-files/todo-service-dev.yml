@@ -1,6 +1,6 @@
 todo:
   property: ToDo Profile Dev
-  test: Test Property for Bus and RabbitMQ (Git)
+  test: Test Property for Bus and RabbitMQ (Github)
 server:
   port: 0
 spring:
