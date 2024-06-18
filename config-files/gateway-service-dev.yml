@@ -21,7 +21,9 @@ spring:
         - id: todo-service-actuator
           uri: lb://todo-service
           predicates:
-            - Path=/actuator/**
+            - Path=/todo-service/actuator/**
+          filters:
+            - RewritePath=/todo-service/?(?<segment>.*), /$\{segment}
     loadbalancer:
       ribbon:
         enabled: false
