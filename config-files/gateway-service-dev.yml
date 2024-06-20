@@ -2,6 +2,11 @@ gateway:
   property: Gateway Profile Dev
 server:
   port: 7080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 spring:
   application:
     name: gateway-service
