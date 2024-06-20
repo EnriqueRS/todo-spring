@@ -3,6 +3,11 @@ todo:
   test: Test Property for Bus and RabbitMQ (Github)
 server:
   port: 0
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 spring:
   application:
     name: todo-service

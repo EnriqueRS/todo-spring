@@ -3,7 +3,6 @@ package com.enriquers.todo.controller;
 import com.enriquers.todo.model.ToDo;
 import com.enriquers.todo.repository.TodoRepository;
 import java.util.List;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
